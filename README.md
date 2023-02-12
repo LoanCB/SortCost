@@ -60,7 +60,7 @@ A minimal, working template for Inertia + Django + Vite + Vue.
 
 ## How to build for production
 
-1. Set `DEBUG=False` in [settings.py](./inertia_django_vite_vue_minimal/settings.py).
+1. Set `DEBUG=False` in [settings.py](config/settings.py).
 
    ```py
    # In settings.py
