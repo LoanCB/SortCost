@@ -1,9 +1,0 @@
-{
-  "recommendations": [
-    "batisteo.vscode-django",
-    "esbenp.prettier-vscode",
-    "hookyqr.beautify",
-    "ms-python.vscode-pylance",
-    "vue.volar"
-  ]
-}
