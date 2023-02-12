@@ -27,14 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ADMIN = ('Loan', 'contact@loan-cb.fr')
 
 VERSION = '0.1.0'
-
-ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -97,9 +92,6 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sortcost_dev',
-        'USER': 'postgres',
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -127,10 +119,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-# django-vite settings
-# https://github.com/MrBin99/django-vite
-DJANGO_VITE_DEV_MODE = DEBUG  # follow Django's dev mode
 
 # Where ViteJS assets are built.
 DJANGO_VITE_ASSETS_PATH = BASE_DIR / "app" / "static" / "dist"
