@@ -157,3 +157,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Local variable environment
+.dotenv
